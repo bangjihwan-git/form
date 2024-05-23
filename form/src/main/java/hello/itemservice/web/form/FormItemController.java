@@ -31,6 +31,7 @@ public class FormItemController {
     
     @ModelAttribute("regions") // 모든 호출된 메서드의 model에 담아줌
     public Map<String, String> regions(){
+    	// 보통 static으로 따로 빼고사용
     	Map<String, String> regions = new LinkedHashMap<>();
     	regions.put("SEOUL", "서울");
     	regions.put("BUSAN", "부산");
@@ -45,6 +46,7 @@ public class FormItemController {
     
     @ModelAttribute("deliveryCodes")
     public List<DeliveryCode> deliveryCodes(){
+    	// 보통 static으로 따로 빼고사용
     	List<DeliveryCode> deliveryCodes = new ArrayList<DeliveryCode>();
     	deliveryCodes.add(new DeliveryCode("FAST", "빠른 배송"));
     	deliveryCodes.add(new DeliveryCode("NORMAL", "일반 배송"));
